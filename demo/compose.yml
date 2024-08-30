@@ -1,0 +1,9 @@
+services:
+  db_pg_latest:
+    image: postgres
+    environment:
+      POSTGRES_DB: test
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: user_password
+    ports:
+      - "5432:5432"
